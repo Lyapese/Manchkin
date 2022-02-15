@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">Manckin</string>
+    <string name="hint_text">Введите имя</string>
+    <string name="buttonMin">-1</string>
+    <string name="buttonMax">+1</string>
+    <string name="StartPosition">1</string>
 </resources>
