@@ -8,27 +8,28 @@
     tools:context=".MainActivity">
 
     <Button
-        android:id="@+id/buttonMax"
+        android:id="@+id/buttonMax2"
         android:layout_width="52dp"
         android:layout_height="50dp"
         android:layout_marginStart="4dp"
         android:layout_marginBottom="32dp"
         android:text="@string/buttonMax"
-        app:layout_constraintBottom_toTopOf="@+id/buttonMax2"
-        app:layout_constraintStart_toEndOf="@+id/view" />
-
-    <Button
-        android:id="@+id/buttonMax4"
-        android:layout_width="52dp"
-        android:layout_height="50dp"
-        android:layout_marginStart="4dp"
-        android:layout_marginBottom="32dp"
-        android:text="@string/buttonMax"
-        app:layout_constraintBottom_toTopOf="@+id/buttonMax5"
-        app:layout_constraintStart_toEndOf="@+id/view4" />
+        app:layout_constraintBottom_toTopOf="@+id/buttonMax3"
+        app:layout_constraintStart_toEndOf="@+id/view"
+        tools:ignore="DuplicateSpeakableTextCheck" />
 
     <Button
         android:id="@+id/buttonMax5"
+        android:layout_width="52dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginBottom="32dp"
+        android:text="@string/buttonMax"
+        app:layout_constraintBottom_toTopOf="@+id/buttonMax6"
+        app:layout_constraintStart_toEndOf="@+id/view4" />
+
+    <Button
+        android:id="@+id/buttonMax6"
         android:layout_width="52dp"
         android:layout_height="50dp"
         android:layout_marginStart="4dp"
@@ -38,16 +39,6 @@
         app:layout_constraintStart_toEndOf="@+id/view5" />
 
     <Button
-        android:id="@+id/buttonMax2"
-        android:layout_width="52dp"
-        android:layout_height="50dp"
-        android:layout_marginStart="4dp"
-        android:layout_marginBottom="32dp"
-        android:text="@string/buttonMax"
-        app:layout_constraintBottom_toTopOf="@+id/buttonMax3"
-        app:layout_constraintStart_toEndOf="@+id/view2" />
-
-    <Button
         android:id="@+id/buttonMax3"
         android:layout_width="52dp"
         android:layout_height="50dp"
@@ -55,6 +46,16 @@
         android:layout_marginBottom="32dp"
         android:text="@string/buttonMax"
         app:layout_constraintBottom_toTopOf="@+id/buttonMax4"
+        app:layout_constraintStart_toEndOf="@+id/view2" />
+
+    <Button
+        android:id="@+id/buttonMax4"
+        android:layout_width="52dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginBottom="32dp"
+        android:text="@string/buttonMax"
+        app:layout_constraintBottom_toTopOf="@+id/buttonMax5"
         app:layout_constraintStart_toEndOf="@+id/view3" />
 
     <Button
@@ -64,20 +65,8 @@
         android:layout_marginStart="4dp"
         android:layout_marginBottom="32dp"
         android:text="@string/buttonMax"
-        app:layout_constraintBottom_toTopOf="@+id/buttonMax"
+        app:layout_constraintBottom_toTopOf="@+id/buttonMax2"
         app:layout_constraintStart_toEndOf="@+id/View1" />
-
-    <EditText
-        android:id="@+id/editTextTextPersonName"
-        android:layout_width="wrap_content"
-        android:layout_height="50dp"
-        android:layout_marginStart="4dp"
-        android:layout_marginBottom="32dp"
-        android:ems="10"
-        android:hint="@string/hint_text"
-        android:inputType="textPersonName"
-        app:layout_constraintBottom_toTopOf="@+id/editTextTextPersonName3"
-        app:layout_constraintStart_toStartOf="parent" />
 
     <EditText
         android:id="@+id/editTextTextPersonName2"
@@ -87,9 +76,26 @@
         android:layout_marginBottom="32dp"
         android:ems="10"
         android:hint="@string/hint_text"
+        android:importantForAutofill="no"
         android:inputType="textPersonName"
-        app:layout_constraintBottom_toTopOf="@+id/editTextTextPersonName"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintBottom_toTopOf="@+id/editTextTextPersonName3"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="DuplicateSpeakableTextCheck,DuplicateSpeakableTextCheck,TextContrastCheck" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName1"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginBottom="32dp"
+        android:ems="10"
+        android:hint="@string/hint_text"
+        android:hintTextColor="@color/hint"
+        android:importantForAutofill="no"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/editTextTextPersonName2"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="TextContrastCheck" />
 
     <EditText
         android:id="@+id/editTextTextPersonName3"
@@ -99,9 +105,12 @@
         android:layout_marginBottom="32dp"
         android:ems="10"
         android:hint="@string/hint_text"
+        android:hintTextColor="@color/hint"
+        android:importantForAutofill="no"
         android:inputType="textPersonName"
         app:layout_constraintBottom_toTopOf="@+id/editTextTextPersonName4"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="TextContrastCheck" />
 
     <EditText
         android:id="@+id/editTextTextPersonName4"
@@ -111,9 +120,12 @@
         android:layout_marginBottom="32dp"
         android:ems="10"
         android:hint="@string/hint_text"
+        android:hintTextColor="@color/hint"
+        android:importantForAutofill="no"
         android:inputType="textPersonName"
         app:layout_constraintBottom_toTopOf="@+id/editTextTextPersonName5"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="TextContrastCheck" />
 
     <EditText
         android:id="@+id/editTextTextPersonName5"
@@ -123,9 +135,12 @@
         android:layout_marginBottom="32dp"
         android:ems="10"
         android:hint="@string/hint_text"
+        android:hintTextColor="@color/hint"
+        android:importantForAutofill="no"
         android:inputType="textPersonName"
         app:layout_constraintBottom_toTopOf="@+id/editTextTextPersonName6"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="TextContrastCheck" />
 
     <EditText
         android:id="@+id/editTextTextPersonName6"
@@ -135,9 +150,12 @@
         android:layout_marginBottom="32dp"
         android:ems="10"
         android:hint="@string/hint_text"
+        android:hintTextColor="@color/hint"
+        android:importantForAutofill="no"
         android:inputType="textPersonName"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="TextContrastCheck" />
 
     <Button
         android:id="@+id/buttonMin1"
@@ -145,9 +163,11 @@
         android:layout_height="50dp"
         android:layout_marginStart="4dp"
         android:layout_marginBottom="32dp"
+        android:onClick="clickMyBtm"
         android:text="@string/buttonMin"
         app:layout_constraintBottom_toTopOf="@+id/buttonMin2"
-        app:layout_constraintStart_toEndOf="@+id/editTextTextPersonName2" />
+        app:layout_constraintStart_toEndOf="@+id/editTextTextPersonName1"
+        tools:ignore="DuplicateSpeakableTextCheck" />
 
     <Button
         android:id="@+id/buttonMin2"
@@ -155,9 +175,10 @@
         android:layout_height="50dp"
         android:layout_marginStart="4dp"
         android:layout_marginBottom="32dp"
+        android:onClick="clickMyBtm"
         android:text="@string/buttonMin"
         app:layout_constraintBottom_toTopOf="@+id/buttonMin3"
-        app:layout_constraintStart_toEndOf="@+id/editTextTextPersonName" />
+        app:layout_constraintStart_toEndOf="@+id/editTextTextPersonName2" />
 
     <Button
         android:id="@+id/buttonMin3"
@@ -208,9 +229,7 @@
         android:autoText="false"
         android:text="@string/StartPosition"
         android:textAlignment="center"
-        android:textColor="#FF5722"
-        android:textColorHighlight="#C11313"
-        android:textColorLink="#D17676"
+        android:textColor="@color/Lvl"
         android:textDirection="firstStrongLtr"
         android:textSize="30sp"
         app:layout_constraintBottom_toTopOf="@+id/view"
@@ -226,7 +245,7 @@
         android:autoText="false"
         android:text="@string/StartPosition"
         android:textAlignment="center"
-        android:textColor="#FF5722"
+        android:textColor="@color/Lvl"
         android:textDirection="firstStrongLtr"
         android:textSize="30sp"
         app:layout_constraintBottom_toTopOf="@+id/view5"
@@ -242,7 +261,7 @@
         android:autoText="false"
         android:text="@string/StartPosition"
         android:textAlignment="center"
-        android:textColor="#FF5722"
+        android:textColor="@color/Lvl"
         android:textDirection="firstStrongLtr"
         android:textSize="30sp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -258,7 +277,7 @@
         android:autoText="false"
         android:text="@string/StartPosition"
         android:textAlignment="center"
-        android:textColor="#FF5722"
+        android:textColor="@color/Lvl"
         android:textDirection="firstStrongLtr"
         android:textSize="30sp"
         app:layout_constraintBottom_toTopOf="@+id/view2"
@@ -274,7 +293,7 @@
         android:autoText="false"
         android:text="@string/StartPosition"
         android:textAlignment="center"
-        android:textColor="#FF5722"
+        android:textColor="@color/Lvl"
         android:textDirection="firstStrongLtr"
         android:textSize="30sp"
         app:layout_constraintBottom_toTopOf="@+id/view3"
@@ -290,7 +309,7 @@
         android:autoText="false"
         android:text="@string/StartPosition"
         android:textAlignment="center"
-        android:textColor="#FF5722"
+        android:textColor="@color/Lvl"
         android:textDirection="firstStrongLtr"
         android:textSize="30sp"
         app:layout_constraintBottom_toTopOf="@+id/view4"
