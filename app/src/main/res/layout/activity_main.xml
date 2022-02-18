@@ -66,7 +66,7 @@
         android:layout_marginBottom="32dp"
         android:text="@string/buttonMax"
         app:layout_constraintBottom_toTopOf="@+id/buttonMax2"
-        app:layout_constraintStart_toEndOf="@+id/View1" />
+        app:layout_constraintStart_toEndOf="@+id/view1" />
 
     <EditText
         android:id="@+id/editTextTextPersonName2"
@@ -90,7 +90,7 @@
         android:layout_marginBottom="32dp"
         android:ems="10"
         android:hint="@string/hint_text"
-        android:hintTextColor="@color/hint"
+        android:textColorHint="@color/hint"
         android:importantForAutofill="no"
         android:inputType="textPersonName"
         app:layout_constraintBottom_toTopOf="@+id/editTextTextPersonName2"
@@ -105,7 +105,7 @@
         android:layout_marginBottom="32dp"
         android:ems="10"
         android:hint="@string/hint_text"
-        android:hintTextColor="@color/hint"
+        android:textColorHint="@color/hint"
         android:importantForAutofill="no"
         android:inputType="textPersonName"
         app:layout_constraintBottom_toTopOf="@+id/editTextTextPersonName4"
@@ -120,7 +120,7 @@
         android:layout_marginBottom="32dp"
         android:ems="10"
         android:hint="@string/hint_text"
-        android:hintTextColor="@color/hint"
+        android:textColorHint="@color/hint"
         android:importantForAutofill="no"
         android:inputType="textPersonName"
         app:layout_constraintBottom_toTopOf="@+id/editTextTextPersonName5"
@@ -135,7 +135,7 @@
         android:layout_marginBottom="32dp"
         android:ems="10"
         android:hint="@string/hint_text"
-        android:hintTextColor="@color/hint"
+        android:textColorHint="@color/hint"
         android:importantForAutofill="no"
         android:inputType="textPersonName"
         app:layout_constraintBottom_toTopOf="@+id/editTextTextPersonName6"
@@ -150,7 +150,7 @@
         android:layout_marginBottom="32dp"
         android:ems="10"
         android:hint="@string/hint_text"
-        android:hintTextColor="@color/hint"
+        android:textColorHint="@color/hint"
         android:importantForAutofill="no"
         android:inputType="textPersonName"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -163,7 +163,7 @@
         android:layout_height="50dp"
         android:layout_marginStart="4dp"
         android:layout_marginBottom="32dp"
-        android:onClick="clickMyBtm"
+        android:onClick="clickMyBtnMin"
         android:text="@string/buttonMin"
         app:layout_constraintBottom_toTopOf="@+id/buttonMin2"
         app:layout_constraintStart_toEndOf="@+id/editTextTextPersonName1"
@@ -175,10 +175,11 @@
         android:layout_height="50dp"
         android:layout_marginStart="4dp"
         android:layout_marginBottom="32dp"
-        android:onClick="clickMyBtm"
+        android:onClick="clickMyBtnMin"
         android:text="@string/buttonMin"
         app:layout_constraintBottom_toTopOf="@+id/buttonMin3"
-        app:layout_constraintStart_toEndOf="@+id/editTextTextPersonName2" />
+        app:layout_constraintStart_toEndOf="@+id/editTextTextPersonName2"
+        tools:ignore="DuplicateSpeakableTextCheck" />
 
     <Button
         android:id="@+id/buttonMin3"
@@ -221,7 +222,7 @@
         app:layout_constraintStart_toEndOf="@+id/editTextTextPersonName6" />
 
     <TextView
-        android:id="@+id/View1"
+        android:id="@+id/view1"
         android:layout_width="70dp"
         android:layout_height="50dp"
         android:layout_marginStart="4dp"
