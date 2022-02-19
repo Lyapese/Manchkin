@@ -15,7 +15,7 @@
         android:layout_marginBottom="32dp"
         android:text="@string/buttonMax"
         app:layout_constraintBottom_toTopOf="@+id/buttonMax3"
-        app:layout_constraintStart_toEndOf="@+id/view"
+        app:layout_constraintStart_toEndOf="@+id/view2"
         tools:ignore="DuplicateSpeakableTextCheck" />
 
     <Button
@@ -26,7 +26,7 @@
         android:layout_marginBottom="32dp"
         android:text="@string/buttonMax"
         app:layout_constraintBottom_toTopOf="@+id/buttonMax6"
-        app:layout_constraintStart_toEndOf="@+id/view4" />
+        app:layout_constraintStart_toEndOf="@+id/view5" />
 
     <Button
         android:id="@+id/buttonMax6"
@@ -36,7 +36,7 @@
         android:layout_marginBottom="32dp"
         android:text="@string/buttonMax"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/view5" />
+        app:layout_constraintStart_toEndOf="@+id/view6" />
 
     <Button
         android:id="@+id/buttonMax3"
@@ -46,7 +46,7 @@
         android:layout_marginBottom="32dp"
         android:text="@string/buttonMax"
         app:layout_constraintBottom_toTopOf="@+id/buttonMax4"
-        app:layout_constraintStart_toEndOf="@+id/view2" />
+        app:layout_constraintStart_toEndOf="@+id/view3" />
 
     <Button
         android:id="@+id/buttonMax4"
@@ -56,7 +56,7 @@
         android:layout_marginBottom="32dp"
         android:text="@string/buttonMax"
         app:layout_constraintBottom_toTopOf="@+id/buttonMax5"
-        app:layout_constraintStart_toEndOf="@+id/view3" />
+        app:layout_constraintStart_toEndOf="@+id/view4" />
 
     <Button
         android:id="@+id/buttonMax1"
@@ -163,7 +163,6 @@
         android:layout_height="50dp"
         android:layout_marginStart="4dp"
         android:layout_marginBottom="32dp"
-        android:onClick="clickMyBtnMin"
         android:text="@string/buttonMin"
         app:layout_constraintBottom_toTopOf="@+id/buttonMin2"
         app:layout_constraintStart_toEndOf="@+id/editTextTextPersonName1"
@@ -175,7 +174,6 @@
         android:layout_height="50dp"
         android:layout_marginStart="4dp"
         android:layout_marginBottom="32dp"
-        android:onClick="clickMyBtnMin"
         android:text="@string/buttonMin"
         app:layout_constraintBottom_toTopOf="@+id/buttonMin3"
         app:layout_constraintStart_toEndOf="@+id/editTextTextPersonName2"
@@ -233,12 +231,12 @@
         android:textColor="@color/Lvl"
         android:textDirection="firstStrongLtr"
         android:textSize="30sp"
-        app:layout_constraintBottom_toTopOf="@+id/view"
+        app:layout_constraintBottom_toTopOf="@+id/view2"
         app:layout_constraintStart_toEndOf="@+id/buttonMin1"
         app:textLocale="@string/StartPosition" />
 
     <TextView
-        android:id="@+id/view4"
+        android:id="@+id/view5"
         android:layout_width="70dp"
         android:layout_height="50dp"
         android:layout_marginStart="4dp"
@@ -249,12 +247,12 @@
         android:textColor="@color/Lvl"
         android:textDirection="firstStrongLtr"
         android:textSize="30sp"
-        app:layout_constraintBottom_toTopOf="@+id/view5"
+        app:layout_constraintBottom_toTopOf="@+id/view6"
         app:layout_constraintStart_toEndOf="@+id/buttonMin5"
         app:textLocale="@string/StartPosition" />
 
     <TextView
-        android:id="@+id/view5"
+        android:id="@+id/view6"
         android:layout_width="70dp"
         android:layout_height="50dp"
         android:layout_marginStart="4dp"
@@ -270,22 +268,6 @@
         app:textLocale="@string/StartPosition" />
 
     <TextView
-        android:id="@+id/view"
-        android:layout_width="70dp"
-        android:layout_height="50dp"
-        android:layout_marginStart="4dp"
-        android:layout_marginBottom="32dp"
-        android:autoText="false"
-        android:text="@string/StartPosition"
-        android:textAlignment="center"
-        android:textColor="@color/Lvl"
-        android:textDirection="firstStrongLtr"
-        android:textSize="30sp"
-        app:layout_constraintBottom_toTopOf="@+id/view2"
-        app:layout_constraintStart_toEndOf="@+id/buttonMin2"
-        app:textLocale="@string/StartPosition" />
-
-    <TextView
         android:id="@+id/view2"
         android:layout_width="70dp"
         android:layout_height="50dp"
@@ -298,7 +280,7 @@
         android:textDirection="firstStrongLtr"
         android:textSize="30sp"
         app:layout_constraintBottom_toTopOf="@+id/view3"
-        app:layout_constraintStart_toEndOf="@+id/buttonMin3"
+        app:layout_constraintStart_toEndOf="@+id/buttonMin2"
         app:textLocale="@string/StartPosition" />
 
     <TextView
@@ -314,6 +296,22 @@
         android:textDirection="firstStrongLtr"
         android:textSize="30sp"
         app:layout_constraintBottom_toTopOf="@+id/view4"
+        app:layout_constraintStart_toEndOf="@+id/buttonMin3"
+        app:textLocale="@string/StartPosition" />
+
+    <TextView
+        android:id="@+id/view4"
+        android:layout_width="70dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginBottom="32dp"
+        android:autoText="false"
+        android:text="@string/StartPosition"
+        android:textAlignment="center"
+        android:textColor="@color/Lvl"
+        android:textDirection="firstStrongLtr"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/view5"
         app:layout_constraintStart_toEndOf="@+id/buttonMin4"
         app:textLocale="@string/StartPosition" />
 
