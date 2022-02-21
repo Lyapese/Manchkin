@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">Munchkin</string>
     <string name="hint_text">Введите имя</string>
-    <string name="buttonMin">-1</string>
-    <string name="buttonMax">+1</string>
+    <string name="buttonMin">-</string>
+    <string name="buttonMax">+</string>
     <string name="StartPosition">1</string>
 </resources>
