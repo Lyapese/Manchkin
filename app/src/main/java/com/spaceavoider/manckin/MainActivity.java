@@ -2,11 +2,9 @@ package com.spaceavoider.manckin;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.nfc.Tag;
+import android.annotation.SuppressLint;
 import android.os.Bundle;
-import android.util.Log;
-import android.view.View;
-import android.widget.Button;
+
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
@@ -18,8 +16,9 @@ public class MainActivity extends AppCompatActivity {
     private int c = 1;
     private int d = 1;
 
+    @SuppressLint("ResourceAsColor")
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
