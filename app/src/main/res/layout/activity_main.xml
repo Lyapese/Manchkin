@@ -6,17 +6,19 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:visibility="visible"
+    android:background="@drawable/fonMainActivity"
     tools:context=".MainActivity"
     tools:visibility="visible">
 
     <Button
         android:id="@+id/buttonMax2"
-        android:layout_width="52dp"
+        android:layout_width="48dp"
         android:layout_height="50dp"
         android:layout_marginStart="4dp"
-        android:layout_marginEnd="20dp"
+        android:layout_marginEnd="25dp"
         android:layout_marginBottom="32dp"
         android:text="@string/buttonMax"
+        android:textColor="@color/text"
         android:textSize="25sp"
         app:layout_constraintBottom_toTopOf="@+id/buttonMax3"
         app:layout_constraintEnd_toEndOf="parent"
@@ -25,12 +27,13 @@
 
     <Button
         android:id="@+id/buttonMax5"
-        android:layout_width="52dp"
+        android:layout_width="48dp"
         android:layout_height="50dp"
         android:layout_marginStart="4dp"
-        android:layout_marginEnd="20dp"
+        android:layout_marginEnd="25dp"
         android:layout_marginBottom="32dp"
         android:text="@string/buttonMax"
+        android:textColor="@color/text"
         android:textSize="25sp"
         app:layout_constraintBottom_toTopOf="@+id/buttonMax6"
         app:layout_constraintEnd_toEndOf="parent"
@@ -38,12 +41,13 @@
 
     <Button
         android:id="@+id/buttonMax6"
-        android:layout_width="52dp"
+        android:layout_width="48dp"
         android:layout_height="50dp"
         android:layout_marginStart="4dp"
-        android:layout_marginEnd="20dp"
+        android:layout_marginEnd="25dp"
         android:layout_marginBottom="32dp"
         android:text="@string/buttonMax"
+        android:textColor="@color/text"
         android:textSize="25sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -51,12 +55,13 @@
 
     <Button
         android:id="@+id/buttonMax3"
-        android:layout_width="52dp"
+        android:layout_width="48dp"
         android:layout_height="50dp"
         android:layout_marginStart="4dp"
-        android:layout_marginEnd="20dp"
+        android:layout_marginEnd="25dp"
         android:layout_marginBottom="32dp"
         android:text="@string/buttonMax"
+        android:textColor="@color/text"
         android:textSize="25sp"
         app:layout_constraintBottom_toTopOf="@+id/buttonMax4"
         app:layout_constraintEnd_toEndOf="parent"
@@ -64,12 +69,13 @@
 
     <Button
         android:id="@+id/buttonMax4"
-        android:layout_width="52dp"
+        android:layout_width="48dp"
         android:layout_height="50dp"
         android:layout_marginStart="4dp"
-        android:layout_marginEnd="20dp"
+        android:layout_marginEnd="25dp"
         android:layout_marginBottom="32dp"
         android:text="@string/buttonMax"
+        android:textColor="@color/text"
         android:textSize="25sp"
         app:layout_constraintBottom_toTopOf="@+id/buttonMax5"
         app:layout_constraintEnd_toEndOf="parent"
@@ -77,215 +83,250 @@
 
     <Button
         android:id="@+id/buttonMax1"
-        android:layout_width="52dp"
+        android:layout_width="48dp"
         android:layout_height="50dp"
         android:layout_marginStart="4dp"
-        android:layout_marginEnd="20dp"
+        android:layout_marginTop="111dp"
+        android:layout_marginEnd="25dp"
         android:layout_marginBottom="32dp"
         android:text="@string/buttonMax"
+        android:textColor="@color/text"
         android:textSize="25sp"
         app:layout_constraintBottom_toTopOf="@+id/buttonMax2"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/view1" />
+        app:layout_constraintStart_toEndOf="@+id/view1"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
         android:id="@+id/editTextTextPersonName2"
         android:layout_width="185dp"
         android:layout_height="50dp"
-        android:layout_marginStart="20dp"
+        android:layout_marginStart="25dp"
         android:layout_marginEnd="4dp"
         android:layout_marginBottom="32dp"
         android:ems="10"
         android:hint="@string/hint_text"
+        android:textColor="@color/text"
         android:importantForAutofill="no"
         android:inputType="textPersonName"
+        android:textColorHint="@color/hint"
         app:layout_constraintBottom_toTopOf="@+id/editTextTextPersonName3"
         app:layout_constraintEnd_toStartOf="@+id/buttonMin2"
         app:layout_constraintStart_toStartOf="parent"
-        tools:ignore="DuplicateSpeakableTextCheck,DuplicateSpeakableTextCheck,TextContrastCheck" />
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName1"
+        tools:ignore="TextContrastCheck,DuplicateSpeakableTextCheck" />
 
     <EditText
         android:id="@+id/editTextTextPersonName1"
         android:layout_width="185dp"
         android:layout_height="50dp"
-        android:layout_marginStart="20dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="111dp"
         android:layout_marginEnd="4dp"
         android:layout_marginBottom="32dp"
         android:ems="10"
         android:hint="@string/hint_text"
+        android:textColor="@color/text"
         android:importantForAutofill="no"
         android:inputType="textPersonName"
         android:textColorHint="@color/hint"
         app:layout_constraintBottom_toTopOf="@+id/editTextTextPersonName2"
         app:layout_constraintEnd_toStartOf="@+id/buttonMin1"
         app:layout_constraintStart_toStartOf="parent"
-        tools:ignore="TextContrastCheck" />
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="TextContrastCheck,DuplicateSpeakableTextCheck" />
 
     <EditText
         android:id="@+id/editTextTextPersonName3"
         android:layout_width="185dp"
         android:layout_height="50dp"
-        android:layout_marginStart="20dp"
+        android:layout_marginStart="25dp"
         android:layout_marginEnd="4dp"
         android:layout_marginBottom="32dp"
         android:ems="10"
         android:hint="@string/hint_text"
+        android:textColor="@color/text"
         android:importantForAutofill="no"
         android:inputType="textPersonName"
         android:textColorHint="@color/hint"
         app:layout_constraintBottom_toTopOf="@+id/editTextTextPersonName4"
         app:layout_constraintEnd_toStartOf="@+id/buttonMin3"
         app:layout_constraintStart_toStartOf="parent"
-        tools:ignore="TextContrastCheck" />
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName2"
+        tools:ignore="TextContrastCheck,DuplicateSpeakableTextCheck"  />
 
     <EditText
         android:id="@+id/editTextTextPersonName4"
         android:layout_width="185dp"
         android:layout_height="50dp"
-        android:layout_marginStart="20dp"
+        android:layout_marginStart="25dp"
         android:layout_marginEnd="4dp"
         android:layout_marginBottom="32dp"
         android:ems="10"
         android:hint="@string/hint_text"
+        android:textColor="@color/text"
         android:importantForAutofill="no"
         android:inputType="textPersonName"
         android:textColorHint="@color/hint"
         app:layout_constraintBottom_toTopOf="@+id/editTextTextPersonName5"
         app:layout_constraintEnd_toStartOf="@+id/buttonMin4"
         app:layout_constraintStart_toStartOf="parent"
-        tools:ignore="TextContrastCheck" />
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName3"
+        tools:ignore="TextContrastCheck,DuplicateSpeakableTextCheck"  />
 
     <EditText
         android:id="@+id/editTextTextPersonName5"
         android:layout_width="185dp"
         android:layout_height="50dp"
-        android:layout_marginStart="20dp"
+        android:layout_marginStart="25dp"
         android:layout_marginEnd="4dp"
         android:layout_marginBottom="32dp"
         android:ems="10"
         android:hint="@string/hint_text"
+        android:textColor="@color/text"
         android:importantForAutofill="no"
         android:inputType="textPersonName"
         android:textColorHint="@color/hint"
         app:layout_constraintBottom_toTopOf="@+id/editTextTextPersonName6"
         app:layout_constraintEnd_toStartOf="@+id/buttonMin5"
         app:layout_constraintStart_toStartOf="parent"
-        tools:ignore="TextContrastCheck" />
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName4"
+        tools:ignore="TextContrastCheck,DuplicateSpeakableTextCheck" />
 
     <EditText
         android:id="@+id/editTextTextPersonName6"
         android:layout_width="185dp"
         android:layout_height="50dp"
-        android:layout_marginStart="20dp"
+        android:layout_marginStart="25dp"
         android:layout_marginEnd="4dp"
         android:layout_marginBottom="32dp"
         android:ems="10"
         android:hint="@string/hint_text"
+        android:textColor="@color/text"
         android:importantForAutofill="no"
         android:inputType="textPersonName"
         android:textColorHint="@color/hint"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/buttonMin6"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName5"
         tools:ignore="TextContrastCheck" />
 
     <Button
         android:id="@+id/buttonMin1"
-        android:layout_width="52dp"
+        android:layout_width="48dp"
         android:layout_height="50dp"
         android:layout_marginStart="4dp"
+        android:layout_marginTop="111dp"
         android:layout_marginEnd="4dp"
         android:layout_marginBottom="32dp"
         android:text="@string/buttonMin"
+        android:textColor="@color/text"
         android:textSize="25sp"
         app:layout_constraintBottom_toTopOf="@+id/buttonMin2"
         app:layout_constraintEnd_toStartOf="@+id/view1"
         app:layout_constraintStart_toEndOf="@+id/editTextTextPersonName1"
-        tools:ignore="DuplicateSpeakableTextCheck" />
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="DuplicateSpeakableTextCheck,TextContrastCheck" />
 
     <Button
         android:id="@+id/buttonMin2"
-        android:layout_width="52dp"
+        android:layout_width="48dp"
         android:layout_height="50dp"
         android:layout_marginStart="4dp"
         android:layout_marginEnd="4dp"
         android:layout_marginBottom="32dp"
         android:text="@string/buttonMin"
+        android:textColor="@color/text"
         android:textSize="25sp"
         app:layout_constraintBottom_toTopOf="@+id/buttonMin3"
         app:layout_constraintEnd_toStartOf="@+id/view2"
         app:layout_constraintStart_toEndOf="@+id/editTextTextPersonName2"
+        app:layout_constraintTop_toBottomOf="@+id/buttonMin1"
         tools:ignore="DuplicateSpeakableTextCheck" />
 
     <Button
         android:id="@+id/buttonMin3"
-        android:layout_width="52dp"
+        android:layout_width="48dp"
         android:layout_height="50dp"
         android:layout_marginStart="4dp"
         android:layout_marginEnd="4dp"
         android:layout_marginBottom="32dp"
         android:text="@string/buttonMin"
+        android:textColor="@color/text"
         android:textSize="25sp"
         app:layout_constraintBottom_toTopOf="@+id/buttonMin4"
         app:layout_constraintEnd_toStartOf="@+id/view3"
-        app:layout_constraintStart_toEndOf="@+id/editTextTextPersonName3" />
+        app:layout_constraintStart_toEndOf="@+id/editTextTextPersonName3"
+        app:layout_constraintTop_toBottomOf="@+id/buttonMin2" />
 
     <Button
         android:id="@+id/buttonMin4"
-        android:layout_width="52dp"
+        android:layout_width="48dp"
         android:layout_height="50dp"
         android:layout_marginStart="4dp"
         android:layout_marginEnd="4dp"
         android:layout_marginBottom="32dp"
         android:text="@string/buttonMin"
+        android:textColor="@color/text"
         android:textSize="25sp"
         app:layout_constraintBottom_toTopOf="@+id/buttonMin5"
         app:layout_constraintEnd_toStartOf="@+id/view4"
-        app:layout_constraintStart_toEndOf="@+id/editTextTextPersonName4" />
+        app:layout_constraintStart_toEndOf="@+id/editTextTextPersonName4"
+        app:layout_constraintTop_toBottomOf="@+id/buttonMin3" />
 
     <Button
         android:id="@+id/buttonMin5"
-        android:layout_width="52dp"
+        android:layout_width="48dp"
         android:layout_height="50dp"
         android:layout_marginStart="4dp"
         android:layout_marginEnd="4dp"
         android:layout_marginBottom="32dp"
         android:text="@string/buttonMin"
+        android:textColor="@color/text"
         android:textSize="25sp"
         app:layout_constraintBottom_toTopOf="@+id/buttonMin6"
         app:layout_constraintEnd_toStartOf="@+id/view5"
-        app:layout_constraintStart_toEndOf="@+id/editTextTextPersonName5" />
+        app:layout_constraintStart_toEndOf="@+id/editTextTextPersonName5"
+        app:layout_constraintTop_toBottomOf="@+id/buttonMin4" />
 
     <Button
         android:id="@+id/buttonMin6"
-        android:layout_width="52dp"
+        android:layout_width="48dp"
         android:layout_height="50dp"
         android:layout_marginStart="4dp"
         android:layout_marginEnd="4dp"
         android:layout_marginBottom="32dp"
         android:text="@string/buttonMin"
+        android:textColor="@color/text"
         android:textSize="25sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/view6"
-        app:layout_constraintStart_toEndOf="@+id/editTextTextPersonName6" />
+        app:layout_constraintStart_toEndOf="@+id/editTextTextPersonName6"
+        app:layout_constraintTop_toBottomOf="@+id/buttonMin5"
+        tools:ignore="TextContrastCheck" />
 
     <TextView
         android:id="@+id/view1"
         android:layout_width="60dp"
         android:layout_height="50dp"
         android:layout_marginStart="4dp"
+        android:layout_marginTop="111dp"
         android:layout_marginEnd="4dp"
         android:layout_marginBottom="32dp"
         android:autoText="false"
+        android:background="@drawable/fonViewText"
         android:text="@string/StartPosition"
         android:textAlignment="center"
-        android:textColor="@color/Lvl"
+        android:textColor="@color/text"
         android:textDirection="firstStrongLtr"
-        android:textSize="30sp"
+        android:textSize="32sp"
         app:layout_constraintBottom_toTopOf="@+id/view2"
         app:layout_constraintEnd_toStartOf="@+id/buttonMax1"
         app:layout_constraintStart_toEndOf="@+id/buttonMin1"
-        app:textLocale="@string/StartPosition" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:textLocale="@string/StartPosition"
+        tools:ignore="Deprecated,TextContrastCheck" />
 
     <TextView
         android:id="@+id/view5"
@@ -295,15 +336,18 @@
         android:layout_marginEnd="4dp"
         android:layout_marginBottom="32dp"
         android:autoText="false"
+        android:background="@drawable/fonViewText"
         android:text="@string/StartPosition"
         android:textAlignment="center"
-        android:textColor="@color/Lvl"
+        android:textColor="@color/text"
         android:textDirection="firstStrongLtr"
-        android:textSize="30sp"
+        android:textSize="32sp"
         app:layout_constraintBottom_toTopOf="@+id/view6"
         app:layout_constraintEnd_toStartOf="@+id/buttonMax5"
         app:layout_constraintStart_toEndOf="@+id/buttonMin5"
-        app:textLocale="@string/StartPosition" />
+        app:layout_constraintTop_toBottomOf="@+id/view4"
+        app:textLocale="@string/StartPosition"
+        tools:ignore="Deprecated,TextContrastCheck" />
 
     <TextView
         android:id="@+id/view6"
@@ -313,15 +357,18 @@
         android:layout_marginEnd="4dp"
         android:layout_marginBottom="32dp"
         android:autoText="false"
+        android:background="@drawable/fonViewText"
         android:text="@string/StartPosition"
         android:textAlignment="center"
-        android:textColor="@color/Lvl"
+        android:textColor="@color/text"
         android:textDirection="firstStrongLtr"
-        android:textSize="30sp"
+        android:textSize="32sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/buttonMax6"
         app:layout_constraintStart_toEndOf="@+id/buttonMin6"
-        app:textLocale="@string/StartPosition" />
+        app:layout_constraintTop_toBottomOf="@+id/view5"
+        app:textLocale="@string/StartPosition"
+        tools:ignore="Deprecated,TextContrastCheck" />
 
     <TextView
         android:id="@+id/view2"
@@ -331,15 +378,18 @@
         android:layout_marginEnd="4dp"
         android:layout_marginBottom="32dp"
         android:autoText="false"
+        android:background="@drawable/fonViewText"
         android:text="@string/StartPosition"
         android:textAlignment="center"
-        android:textColor="@color/Lvl"
+        android:textColor="@color/text"
         android:textDirection="firstStrongLtr"
-        android:textSize="30sp"
+        android:textSize="32sp"
         app:layout_constraintBottom_toTopOf="@+id/view3"
         app:layout_constraintEnd_toStartOf="@+id/buttonMax2"
         app:layout_constraintStart_toEndOf="@+id/buttonMin2"
-        app:textLocale="@string/StartPosition" />
+        app:layout_constraintTop_toBottomOf="@+id/view1"
+        app:textLocale="@string/StartPosition"
+        tools:ignore="Deprecated,TextContrastCheck" />
 
     <TextView
         android:id="@+id/view3"
@@ -349,15 +399,18 @@
         android:layout_marginEnd="4dp"
         android:layout_marginBottom="32dp"
         android:autoText="false"
+        android:background="@drawable/fonViewText"
         android:text="@string/StartPosition"
         android:textAlignment="center"
-        android:textColor="@color/Lvl"
+        android:textColor="@color/text"
         android:textDirection="firstStrongLtr"
-        android:textSize="30sp"
+        android:textSize="32sp"
         app:layout_constraintBottom_toTopOf="@+id/view4"
         app:layout_constraintEnd_toStartOf="@+id/buttonMax3"
         app:layout_constraintStart_toEndOf="@+id/buttonMin3"
-        app:textLocale="@string/StartPosition" />
+        app:layout_constraintTop_toBottomOf="@+id/view2"
+        app:textLocale="@string/StartPosition"
+        tools:ignore="Deprecated,TextContrastCheck" />
 
     <TextView
         android:id="@+id/view4"
@@ -367,14 +420,17 @@
         android:layout_marginEnd="4dp"
         android:layout_marginBottom="32dp"
         android:autoText="false"
+        android:background="@drawable/fonViewText"
         android:text="@string/StartPosition"
         android:textAlignment="center"
-        android:textColor="@color/Lvl"
+        android:textColor="@color/text"
         android:textDirection="firstStrongLtr"
-        android:textSize="30sp"
+        android:textSize="32sp"
         app:layout_constraintBottom_toTopOf="@+id/view5"
         app:layout_constraintEnd_toStartOf="@+id/buttonMax4"
         app:layout_constraintStart_toEndOf="@+id/buttonMin4"
-        app:textLocale="@string/StartPosition" />
+        app:layout_constraintTop_toBottomOf="@+id/view3"
+        app:textLocale="@string/StartPosition"
+        tools:ignore="Deprecated,TextContrastCheck" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
