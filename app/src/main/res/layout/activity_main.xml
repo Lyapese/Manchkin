@@ -10,6 +10,7 @@
     android:scrollbars="vertical"
     android:verticalScrollbarPosition="right"
     android:visibility="visible"
+    android:screenOrientation="portrait"
     tools:context=".MainActivity"
     tools:visibility="visible">
 
