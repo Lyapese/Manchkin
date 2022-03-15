@@ -19,11 +19,15 @@
         android:layout_width="170dp"
         android:layout_height="80dp"
         android:layout_marginStart="100dp"
+        android:layout_marginTop="50dp"
         android:layout_marginEnd="100dp"
-        android:text="TextView"
+        android:text="@string/start_menu"
+        android:textAlignment="center"
+        android:textSize="50sp"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="38dp" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/button"
@@ -32,7 +36,7 @@
         android:layout_marginStart="100dp"
         android:layout_marginTop="30dp"
         android:layout_marginEnd="100dp"
-        android:text="Button"
+        android:text="@string/button_manckin"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView" />
@@ -44,7 +48,7 @@
         android:layout_marginStart="100dp"
         android:layout_marginTop="30dp"
         android:layout_marginEnd="100dp"
-        android:text="Button"
+        android:text="@string/button_hyperborea"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button" />
@@ -54,9 +58,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="30dp"
-        android:layout_marginEnd="293dp"
-        android:text="Button"
+        android:layout_marginEnd="250dp"
+        android:layout_marginBottom="50dp"
+        android:text="@string/button_exit"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="592dp" />
+        app:layout_constraintStart_toStartOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>
