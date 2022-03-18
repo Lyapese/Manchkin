@@ -16,8 +16,11 @@ public class Menu extends AppCompatActivity implements View.OnClickListener  {
         button2 = findViewById(R.id.button2);
         button3 = findViewById(R.id.button3);
     }
-    @SuppressLint("NonConstantResourceId")
     @Override
+    public void onBackPressed() { moveTaskToBack(true);
+    android.os.Process.killProcess(android.os.Process.myPid());
+    System.exit(1); }
+    @SuppressLint("NonConstantResourceId")
     public void onClick(View view) {
         switch (view.getId()) {
             case R.id.button:
@@ -25,13 +28,13 @@ public class Menu extends AppCompatActivity implements View.OnClickListener  {
                 startActivity(intent);
                 break;
             case R.id.button2:
-                Toast toast = Toast.makeText(getApplicationContext(), "Hello Android!",Toast.LENGTH_LONG);
+                Toast toast = Toast.makeText(getApplicationContext(), "В разработке",Toast.LENGTH_SHORT);
                 toast.show();
+                break;
             case R.id.button3:
-                Intent homeIntent = new Intent(Intent.ACTION_MAIN);
-                homeIntent.addCategory( Intent.CATEGORY_HOME );
-                homeIntent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-                startActivity(homeIntent);
+                onBackPressed();
+                break;
+            default:
                 break;
         }
     }
