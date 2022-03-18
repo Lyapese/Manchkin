@@ -11,7 +11,7 @@
     android:verticalScrollbarPosition="right"
     android:visibility="visible"
     android:screenOrientation="portrait"
-    tools:context=".MainActivity"
+    tools:context=".Activity"
     tools:visibility="visible">
 
     <Button
