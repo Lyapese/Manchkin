@@ -7,7 +7,7 @@ import android.os.Bundle;
 
 import android.widget.TextView;
 
-public class Activity extends AppCompatActivity {
+public class Manckin extends AppCompatActivity {
 
     private int x = 1;
     private int y = 1;

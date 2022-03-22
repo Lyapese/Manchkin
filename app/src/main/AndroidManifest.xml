@@ -9,6 +9,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Munchkin">
         <activity
+            android:name=".Ecologic"
+            android:exported="false" />
+        <activity
             android:name=".Menu"
             android:exported="true">
             <intent-filter>
@@ -18,7 +21,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".Activity"
+            android:name=".Manckin"
             android:screenOrientation="fullSensor" />
     </application>
 
