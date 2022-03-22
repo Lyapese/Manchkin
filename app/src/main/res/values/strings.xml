@@ -8,4 +8,6 @@
     <string name="button_manckin">Манчкин</string>
     <string name="button_hyperborea">Гиперборея</string>
     <string name="button_exit">Выход</string>
+    <string name="eco_hint">Введите количество эко-очков</string>
+    <string name="eco_moneyhint">Введите количество денег</string>
 </resources>

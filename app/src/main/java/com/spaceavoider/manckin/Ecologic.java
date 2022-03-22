@@ -9,15 +9,10 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
-
-import android.os.Bundle;
-
 public class Ecologic extends AppCompatActivity {
     EditText EditText1, EditText2;
     TextView ScoreOut;
-    Button button1;
     int Score, a1, b1, k;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -25,10 +20,8 @@ public class Ecologic extends AppCompatActivity {
         EditText1 = findViewById(R.id.editTextTextPersonName1);
         EditText2 = findViewById(R.id.editTextTextPersonName2);
         ScoreOut = findViewById(R.id.textView4);
-        button1 = findViewById(R.id.button4);
     }
-
-    public void Click(View view) {
+    public void setScore() {
         String a = EditText1.getText().toString();
         String b = EditText2.getText().toString();
         a1 = Integer.parseInt(a);
@@ -43,6 +36,8 @@ public class Ecologic extends AppCompatActivity {
             k = 1;
         }
         Score = k*(a1+b1);
+    }
+    public void Click(View view){
         ScoreOut.setText(Score);
     }
 }

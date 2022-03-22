@@ -10,7 +10,7 @@
         android:theme="@style/Theme.Munchkin">
         <activity
             android:name=".Ecologic"
-            android:exported="false" />
+            android:exported="true" />
         <activity
             android:name=".Menu"
             android:exported="true">

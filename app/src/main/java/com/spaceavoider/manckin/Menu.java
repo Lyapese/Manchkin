@@ -7,15 +7,10 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
 public class Menu extends AppCompatActivity implements View.OnClickListener  {
-    Button button, button2, button3, button4;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_menu);
-        button = findViewById(R.id.button);
-        button2 = findViewById(R.id.button2);
-        button3 = findViewById(R.id.button3);
-        button4 = findViewById(R.id.button4);
     }
     @Override
     public void onBackPressed() { moveTaskToBack(true);
@@ -35,7 +30,7 @@ public class Menu extends AppCompatActivity implements View.OnClickListener  {
             case R.id.button3:
                 onBackPressed();
                 break;
-            case R.id.button4:
+            case R.id.button5:
                 Intent intent2 = new Intent(this, Ecologic.class);
                 startActivity(intent2);
                 break;
