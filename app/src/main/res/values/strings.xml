@@ -5,9 +5,11 @@
     <string name="buttonMax">+</string>
     <string name="StartPosition">1</string>
     <string name="start_menu">Меню</string>
-    <string name="button_manckin">Манчкин</string>
-    <string name="button_hyperborea">Гиперборея</string>
+    <string name="button_manckin">Munchkin</string>
+    <string name="button_hyperborea">Hyperborea</string>
+    <string name="button_ecologic">Ecologic</string>
     <string name="button_exit">Выход</string>
     <string name="eco_hint">Введите количество эко-очков</string>
     <string name="eco_moneyhint">Введите количество денег</string>
+    <string name="button_eco">Итог</string>
 </resources>

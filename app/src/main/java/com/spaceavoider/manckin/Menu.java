@@ -20,7 +20,7 @@ public class Menu extends AppCompatActivity implements View.OnClickListener  {
     public void onClick(View view) {
         switch (view.getId()) {
             case R.id.button:
-                Intent intent = new Intent(this, Manckin.class);
+                Intent intent = new Intent(Menu.this, Manckin.class);
                 startActivity(intent);
                 break;
             case R.id.button2:
@@ -30,8 +30,8 @@ public class Menu extends AppCompatActivity implements View.OnClickListener  {
             case R.id.button3:
                 onBackPressed();
                 break;
-            case R.id.button5:
-                Intent intent2 = new Intent(this, Ecologic.class);
+            case R.id.button4:
+                Intent intent2 = new Intent(Menu.this, Ecologic.class);
                 startActivity(intent2);
                 break;
             default:

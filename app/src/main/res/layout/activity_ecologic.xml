@@ -15,11 +15,11 @@
     tools:visibility="visible">
 
     <EditText
-        android:id="@+id/editTextTextPersonName1"
+        android:id="@+id/EditMoney"
         android:layout_width="306dp"
         android:layout_height="48dp"
         android:layout_marginStart="25dp"
-        android:layout_marginTop="111dp"
+        android:layout_marginTop="50dp"
         android:layout_marginEnd="25dp"
         android:ems="10"
         android:hint="@string/eco_moneyhint"
@@ -27,18 +27,19 @@
         android:inputType="textPersonName"
         android:textColor="@color/black"
         android:textColorHint="@color/hint"
+        app:layout_constraintBottom_toTopOf="@+id/ScoreView"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         tools:ignore="TextContrastCheck,DuplicateSpeakableTextCheck" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName6"
+        android:id="@+id/EditEco"
         android:layout_width="306dp"
         android:layout_height="53dp"
         android:layout_marginStart="25dp"
         android:layout_marginEnd="25dp"
-        android:layout_marginBottom="88dp"
+        android:layout_marginBottom="75dp"
         android:ems="10"
         android:hint="@string/eco_hint"
         android:importantForAutofill="no"
@@ -48,28 +49,35 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ScoreView"
         tools:ignore="TextContrastCheck,DuplicateSpeakableTextCheck" />
 
     <TextView
-        android:id="@+id/textView4"
+        android:id="@+id/ScoreView"
         android:layout_width="202dp"
         android:layout_height="182dp"
-        android:text="TextView"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.224"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="50dp"
+        android:background="@drawable/rectangle"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="100sp"
+        app:layout_constraintBottom_toTopOf="@+id/EditEco"
+        app:layout_constraintEnd_toStartOf="@+id/buttonScore"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.498" />
+        app:layout_constraintTop_toBottomOf="@+id/EditMoney" />
 
     <Button
         android:id="@+id/buttonScore"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="134dp"
-        android:layout_marginEnd="36dp"
-        android:onClick="Click"
-        android:text="Button"
+        android:layout_width="89dp"
+        android:layout_height="89dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="50dp"
+        android:onClick="Score"
+        android:text="@string/button_eco"
+        app:layout_constraintBottom_toTopOf="@+id/EditEco"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName1" />
+        app:layout_constraintStart_toEndOf="@+id/ScoreView"
+        app:layout_constraintTop_toBottomOf="@+id/EditMoney" />
 </androidx.constraintlayout.widget.ConstraintLayout>

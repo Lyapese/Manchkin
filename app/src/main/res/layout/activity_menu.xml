@@ -52,8 +52,9 @@
         android:onClick="onClick"
         android:text="@string/button_hyperborea"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.516"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button" />
+        app:layout_constraintTop_toBottomOf="@+id/button4" />
 
     <Button
         android:id="@+id/button3"
@@ -69,14 +70,18 @@
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
-        android:id="@+id/button5"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="39dp"
-        android:text="@string/StartPosition"
+        android:id="@+id/button4"
+        android:layout_width="180dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="100dp"
         android:onClick="onClick"
+        android:text="@string/button_ecologic"
+        app:layout_constraintBottom_toTopOf="@+id/button2"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.483"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button2" />
+        app:layout_constraintTop_toBottomOf="@+id/button" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
