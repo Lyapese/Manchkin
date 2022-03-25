@@ -5,6 +5,7 @@
         <item name="colorPrimary">@color/BlackMarlin</item>
         <item name="colorPrimaryVariant">@color/OldCopper</item>
         <item name="colorOnPrimary">@color/white</item>
+        <item name="fontFamily">@font/font5</item>
         <!-- Status bar color. -->
         <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
         <!-- Customize your theme here. -->
