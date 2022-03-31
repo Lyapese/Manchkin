@@ -1,10 +1,13 @@
 package com.spaceavoider.manckin;
 
+import androidx.annotation.StringRes;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.annotation.SuppressLint;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 
+import android.preference.PreferenceManager;
 import android.widget.EditText;
 import android.widget.TextView;
 
@@ -16,7 +19,9 @@ public class Manckin extends AppCompatActivity {
     private int b = 1;
     private int c = 1;
     private int d = 1;
+    SharedPreferences myPreferences;
     EditText editTextTextPersonName1, editTextTextPersonName2, editTextTextPersonName3, editTextTextPersonName4, editTextTextPersonName5, editTextTextPersonName6;
+
 
     @SuppressLint("ResourceAsColor")
     @Override
@@ -29,8 +34,39 @@ public class Manckin extends AppCompatActivity {
         editTextTextPersonName4 = findViewById(R.id.editTextTextPersonName4);
         editTextTextPersonName5 = findViewById(R.id.editTextTextPersonName5);
         editTextTextPersonName6 = findViewById(R.id.editTextTextPersonName6);
-
-        String Name1, Name2, Name3, Name4, Name5, Name6;
+        myPreferences = PreferenceManager.getDefaultSharedPreferences(Manckin.this);
+        String Name1 = "";
+        String Name2 = "";
+        String Name3 = "";
+        String Name4 = "";
+        String Name5 = "";
+        String Name6 = "";
+        editTextTextPersonName1.setText(Name1);
+        editTextTextPersonName2.setText(Name2);
+        editTextTextPersonName3.setText(Name3);
+        editTextTextPersonName4.setText(Name4);
+        editTextTextPersonName5.setText(Name5);
+        editTextTextPersonName6.setText(Name6);
+        SharedPreferences.Editor myEditor = myPreferences.edit();
+        myEditor.putString("Name1", String.valueOf(editTextTextPersonName1));
+        myEditor.putString("Name2", String.valueOf(editTextTextPersonName2));
+        myEditor.putString("Name3", String.valueOf(editTextTextPersonName3));
+        myEditor.putString("Name4", String.valueOf(editTextTextPersonName4));
+        myEditor.putString("Name5", String.valueOf(editTextTextPersonName5));
+        myEditor.putString("Name6", String.valueOf(editTextTextPersonName6));
+        myEditor.apply();
+        Name1 = myPreferences.getString("Name1", "");
+        Name2 = myPreferences.getString("Name2", "");
+        Name3 = myPreferences.getString("Name3", "");
+        Name4 = myPreferences.getString("Name4", "");
+        Name5 = myPreferences.getString("Name5", "");
+        Name6 = myPreferences.getString("Name6", "");
+        editTextTextPersonName1.setText(Name1);
+        editTextTextPersonName2.setText(Name2);
+        editTextTextPersonName3.setText(Name3);
+        editTextTextPersonName4.setText(Name4);
+        editTextTextPersonName5.setText(Name5);
+        editTextTextPersonName6.setText(Name6);
 
         TextView view1 = findViewById(R.id.view1);
 
