@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.annotation.SuppressLint;
 import android.os.Bundle;
 
+import android.widget.EditText;
 import android.widget.TextView;
 
 public class Manckin extends AppCompatActivity {
@@ -15,12 +16,21 @@ public class Manckin extends AppCompatActivity {
     private int b = 1;
     private int c = 1;
     private int d = 1;
+    EditText editTextTextPersonName1, editTextTextPersonName2, editTextTextPersonName3, editTextTextPersonName4, editTextTextPersonName5, editTextTextPersonName6;
 
     @SuppressLint("ResourceAsColor")
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        editTextTextPersonName1 = findViewById(R.id.editTextTextPersonName1);
+        editTextTextPersonName2 = findViewById(R.id.editTextTextPersonName2);
+        editTextTextPersonName3 = findViewById(R.id.editTextTextPersonName3);
+        editTextTextPersonName4 = findViewById(R.id.editTextTextPersonName4);
+        editTextTextPersonName5 = findViewById(R.id.editTextTextPersonName5);
+        editTextTextPersonName6 = findViewById(R.id.editTextTextPersonName6);
+
+        String Name1, Name2, Name3, Name4, Name5, Name6;
 
         TextView view1 = findViewById(R.id.view1);
 

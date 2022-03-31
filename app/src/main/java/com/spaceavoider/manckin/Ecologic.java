@@ -7,22 +7,17 @@ import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
 
-import java.math.RoundingMode;
-import java.text.DecimalFormat;
-
 public class Ecologic extends AppCompatActivity {
     EditText EditText1, EditText2;
     TextView ScoreOut;
-    double a1;
-    double b1;
-    String x;
-    float k;
+    double a1, b1, y, k, x;
+    String val;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_ecologic);
-        EditText1 = findViewById(R.id.EditEco);
+        EditText1 = findViewById(R.id.editTextTextPersonName6);
         EditText2 = findViewById(R.id.EditMoney);
         ScoreOut = findViewById(R.id.ScoreView);
     }
@@ -40,19 +35,21 @@ public class Ecologic extends AppCompatActivity {
             b1 = 1.0;
         }
         if (a1 < b1){
-            k = (float) ((a1/b1)*(a1+b1));
-            DecimalFormat decimalFormat = new DecimalFormat("#.#");
-            x = decimalFormat.format(k);
+            k = (double) ((a1/b1)*(a1+b1));
+            x = Math.pow(10, 1);
+            y = Math.ceil(k * x)/x;
+            val = Float.toString((float) y);
         }
         if (a1 > b1){
-            k = (float) ((b1/a1)*(a1+b1));
-            DecimalFormat decimalFormat = new DecimalFormat("#.#");
-            x = decimalFormat.format(k);
+            k = (double) ((b1/a1)*(a1+b1));
+            x = Math.pow(10, 1);
+            y = Math.ceil(k * x)/x;
+            val = Float.toString((float) y);
         }
         if (a1 == b1){
             k = (int) (a1+b1);
-            x = Integer.toString((int) k);
+            val = Integer.toString((int) k);
         }
-    ScoreOut.setText(x);
+    ScoreOut.setText(val);
     }
 }

@@ -212,14 +212,14 @@
         android:inputType="textPersonName"
         android:textColor="@color/black"
         android:textColorHint="@color/hint"
-        app:layout_constraintBottom_toTopOf="@+id/EditEco"
+        app:layout_constraintBottom_toTopOf="@+id/editTextTextPersonName6"
         app:layout_constraintEnd_toStartOf="@+id/buttonMin5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName4"
         tools:ignore="TextContrastCheck,DuplicateSpeakableTextCheck" />
 
     <EditText
-        android:id="@+id/EditEco"
+        android:id="@+id/editTextTextPersonName6"
         android:layout_width="185dp"
         android:layout_height="50dp"
         android:layout_marginStart="25dp"
@@ -342,7 +342,7 @@
         android:textSize="25sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/view6"
-        app:layout_constraintStart_toEndOf="@+id/EditEco"
+        app:layout_constraintStart_toEndOf="@+id/editTextTextPersonName6"
         app:layout_constraintTop_toBottomOf="@+id/buttonMin5"
         tools:ignore="TextContrastCheck" />
 
