@@ -142,11 +142,10 @@
         android:layout_width="185dp"
         android:layout_height="50dp"
         android:layout_marginStart="25dp"
-        android:layout_marginTop="111dp"
         android:layout_marginEnd="4dp"
         android:layout_marginBottom="32dp"
-        android:fontFamily="@font/font5"
         android:ems="10"
+        android:fontFamily="@font/font5"
         android:hint="@string/hint_text"
         android:importantForAutofill="no"
         android:inputType="textPersonName"
@@ -155,7 +154,7 @@
         app:layout_constraintBottom_toTopOf="@+id/editTextTextPersonName2"
         app:layout_constraintEnd_toStartOf="@+id/buttonMin1"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_back1"
         tools:ignore="TextContrastCheck,DuplicateSpeakableTextCheck" />
 
     <EditText
@@ -355,7 +354,6 @@
         android:layout_marginEnd="4dp"
         android:autoText="false"
         android:background="@drawable/rectangle"
-        android:fontFamily="@font/font1"
         android:text="@string/StartPosition"
         android:textAlignment="center"
         android:textColor="@color/black"
@@ -377,7 +375,7 @@
         android:layout_marginEnd="4dp"
         android:autoText="false"
         android:background="@drawable/rectangle"
-        android:fontFamily="@font/font1"
+
         android:text="@string/StartPosition"
         android:textAlignment="center"
         android:textColor="@color/black"
@@ -400,7 +398,6 @@
         android:layout_marginBottom="32dp"
         android:autoText="false"
         android:background="@drawable/rectangle"
-        android:fontFamily="@font/font1"
         android:text="@string/StartPosition"
         android:textAlignment="center"
         android:textColor="@color/black"
@@ -422,7 +419,6 @@
         android:layout_marginEnd="4dp"
         android:autoText="false"
         android:background="@drawable/rectangle"
-        android:fontFamily="@font/font1"
         android:text="@string/StartPosition"
         android:textAlignment="center"
         android:textColor="@color/black"
@@ -444,7 +440,6 @@
         android:layout_marginEnd="4dp"
         android:autoText="false"
         android:background="@drawable/rectangle"
-        android:fontFamily="@font/font1"
         android:text="@string/StartPosition"
         android:textAlignment="center"
         android:textColor="@color/black"
@@ -466,7 +461,6 @@
         android:layout_marginEnd="4dp"
         android:autoText="false"
         android:background="@drawable/rectangle"
-        android:fontFamily="@font/font1"
         android:text="@string/StartPosition"
         android:textAlignment="center"
         android:textColor="@color/black"
@@ -478,5 +472,20 @@
         app:layout_constraintTop_toBottomOf="@+id/view3"
         app:textLocale="@string/StartPosition"
         tools:ignore="Deprecated,TextContrastCheck,TextViewEdits" />
+
+    <Button
+        android:id="@+id/button_back1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="Click"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="290dp"
+        android:layout_marginBottom="32dp"
+        android:text="@string/button_back"
+        app:layout_constraintBottom_toTopOf="@+id/editTextTextPersonName1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

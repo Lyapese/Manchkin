@@ -12,4 +12,5 @@
     <string name="eco_hint">Введите количество эко-очков</string>
     <string name="eco_moneyhint">Введите количество денег</string>
     <string name="button_eco">Итог</string>
+    <string name="button_back">Назад</string>
 </resources>

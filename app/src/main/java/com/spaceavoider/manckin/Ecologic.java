@@ -2,6 +2,7 @@ package com.spaceavoider.manckin;
 
 import androidx.appcompat.app.AppCompatActivity;
 import android.annotation.SuppressLint;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
@@ -51,5 +52,10 @@ public class Ecologic extends AppCompatActivity {
             val = Integer.toString((int) k);
         }
     ScoreOut.setText(val);
+    }
+
+    public void Back(View view) {
+        Intent intent = new Intent(Ecologic.this, Menu.class);
+        startActivity(intent);
     }
 }

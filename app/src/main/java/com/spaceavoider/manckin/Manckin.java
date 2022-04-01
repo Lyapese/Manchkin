@@ -3,12 +3,15 @@ package com.spaceavoider.manckin;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.annotation.SuppressLint;
+import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 
 import android.preference.PreferenceManager;
 import android.text.Editable;
 import android.text.TextWatcher;
+import android.view.View;
+import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
@@ -20,18 +23,14 @@ public class Manckin extends AppCompatActivity {
     private int b = 1;
     private int c = 1;
     private int d = 1;
-    EditText editTextTextPersonName1 = findViewById(R.id.editTextTextPersonName1);
-    EditText editTextTextPersonName2 = findViewById(R.id.editTextTextPersonName2);
-    EditText editTextTextPersonName3 = findViewById(R.id.editTextTextPersonName3);
-    EditText editTextTextPersonName4 = findViewById(R.id.editTextTextPersonName4);
-    EditText editTextTextPersonName5 = findViewById(R.id.editTextTextPersonName5);
-    EditText editTextTextPersonName6 = findViewById(R.id.editTextTextPersonName6);
     String Name1;
     String Name2;
     String Name3;
     String Name4;
     String Name5;
     String Name6;
+    Button button_back;
+    EditText editTextTextPersonName1, editTextTextPersonName2, editTextTextPersonName3, editTextTextPersonName4, editTextTextPersonName5, editTextTextPersonName6;
     SharedPreferences myPreferences;
 
     @SuppressLint("ResourceAsColor")
@@ -40,6 +39,12 @@ public class Manckin extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         myPreferences = PreferenceManager.getDefaultSharedPreferences(Manckin.this);
+        editTextTextPersonName1 = findViewById(R.id.editTextTextPersonName1);
+        editTextTextPersonName2 = findViewById(R.id.editTextTextPersonName2);
+        editTextTextPersonName3 = findViewById(R.id.editTextTextPersonName3);
+        editTextTextPersonName4 = findViewById(R.id.editTextTextPersonName4);
+        editTextTextPersonName5 = findViewById(R.id.editTextTextPersonName5);
+        editTextTextPersonName6 = findViewById(R.id.editTextTextPersonName6);
         Name1 = myPreferences.getString("Name1", Name1);
         Name2 = myPreferences.getString("Name2", Name2);
         Name3 = myPreferences.getString("Name3", Name3);
@@ -52,6 +57,7 @@ public class Manckin extends AppCompatActivity {
         editTextTextPersonName4.setText(Name4);
         editTextTextPersonName5.setText(Name5);
         editTextTextPersonName6.setText(Name6);
+        button_back = findViewById(R.id.button_back1);
 
         TextView view1 = findViewById(R.id.view1);
 
@@ -278,6 +284,8 @@ public class Manckin extends AppCompatActivity {
         });
 
     }
-
-
+    public void Click(View view) {
+        Intent intent = new Intent(Manckin.this, Menu.class);
+        startActivity(intent);
+    }
 }

@@ -28,7 +28,7 @@ public class Menu extends AppCompatActivity implements View.OnClickListener  {
                 toast.show();
                 break;
             case R.id.button3:
-                onBackPressed();
+                finishAndRemoveTask();
                 break;
             case R.id.button4:
                 Intent intent2 = new Intent(Menu.this, Ecologic.class);
