@@ -18,7 +18,7 @@ public class Ecologic extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_ecologic);
-        EditText1 = findViewById(R.id.editTextTextPersonName6);
+        EditText1 = findViewById(R.id.EditEco);
         EditText2 = findViewById(R.id.EditMoney);
         ScoreOut = findViewById(R.id.ScoreView);
     }
