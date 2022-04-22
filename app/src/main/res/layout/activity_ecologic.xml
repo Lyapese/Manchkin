@@ -70,7 +70,7 @@
         android:keepScreenOn="false"
         android:textAlignment="center"
         android:textColor="@color/black"
-        android:textSize="100sp"
+        android:textSize="96sp"
         app:layout_constraintBottom_toTopOf="@+id/EditEco"
         app:layout_constraintEnd_toStartOf="@+id/buttonScore"
         app:layout_constraintStart_toStartOf="parent"
